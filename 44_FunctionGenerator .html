@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // function in bersifat lazy, yang mana hanya ketika di butuhkan dia di eksekusi
+      // menggunakan keyword yield dan bintang (*) difunctionnya
+
+      function* lazyGenerator(value) {
+        for (let i = 1; i <= value; i++) {
+          if (i % 2 === 1) {
+            yield i;
+          }
+        }
+      }
+      let numbers = lazyGenerator(100);
+      for (let angka of numbers) {
+        console.info(`${angka}`);
+      }
+
+      
+    </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // arrow function
+      const nama = (namaAwal, namaAkhir) => `hai nama saya ${namaAwal} ${namaAkhir}`;
+      document.write(`<p>${nama("sholeh", "alfarys")}</p>`);
+
+      const umur = (umurSepuluh, sisaUmur) => umurSepuluh + sisaUmur;
+      document.write(`<p>jadi umur saya yaitu ${umur(10, 9)}</p>`);
+
+      const alamat = (address) => document.write(`saya tinggal di ${address}`);
+      alamat("rembang");
+
+      function anony_Prodi(callback) {
+        callback("Teknik Informatika");
+      }
+      anony_Prodi((prodi) => document.write(`<p>saya berasal dari program studi ${prodi}</p>`));
+    </script>
+  </body>
+</html>

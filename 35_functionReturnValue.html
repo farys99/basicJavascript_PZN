@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      document.write("hello world");
+
+      function inireturn(nilai) {
+        if (nilai > 90) {
+          return "A";
+        } else if (nilai > 80) {
+          return "B";
+        } else if (nilai > 70) {
+          return "C";
+        } else if (nilai > 60) {
+          return "D";
+        } else {
+          return "E";
+        }
+      }
+
+      const hasil = inireturn(91);
+      document.write(`hasil nilai dari ananda farys adalah ${hasil}`);
+
+      function memanggil(nama, umur) {
+        const person = `hai, kenalkan nama saya adalah ${nama} dan umur saya ${umur}`;
+        return person;
+      }
+      const manusia = memanggil("farys", 19);
+      document.write(`<p>${manusia}</p>`);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function iniRest(nama, kelas, ...nilai) {
+        let total = 0;
+        for (const item of nilai) {
+          total += item;
+        }
+        const totalAkhir = total / nilai.length;
+        const siswa = `<p>nama ${nama}, kelas ${kelas}, nilai rata2 ${totalAkhir}</p>`;
+        document.write(siswa);
+      }
+      iniRest("supardi", 10, ...[70, 80, 90, 70, 80]);
+      iniRest("hendra", 11, ...[90, 80, 85, 85, 90]);
+    </script>
+  </body>
+</html>

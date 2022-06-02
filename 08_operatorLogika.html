@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // && dan  || atau ! tidak
+      let a = 10;
+      let b = 15;
+      if (a && b >= 25) document.write("ganteng");
+      else document.write("jelek </br>");
+
+      const nilaiUjian = 90;
+      const nilaiAbsensi = 10;
+      const lulusUjian = nilaiUjian > 75;
+      const lulusbsensi = nilaiAbsensi > 80;
+      const lulus = lulusUjian || lulusbsensi;
+      document.write(lulus);
+    </script>
+  </body>
+</html>

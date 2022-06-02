@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function adder(value) {
+        const owner = `Farys`;
+
+        function inAdder(values) {
+          //console.info(owner);
+          return value + values;
+        }
+        return inAdder;
+      }
+      const penjummlahanDua = adder(2);
+      const penjumlahanSepuluh = adder(10);
+
+      console.info(penjummlahanDua(10)); // 12
+      console.info(penjumlahanSepuluh(50)); // 60
+
+      console.info(" pemmbatas percobaan");
+
+      function addOne(valueOne) {
+        function addTwo(ValueTwo) {
+          function addThree(valueThree) {
+            return valueTwo + valueThree;
+          }
+          return addThree + valueOne;
+        }
+        return addTwo;
+      }
+    </script>
+  </body>
+</html>

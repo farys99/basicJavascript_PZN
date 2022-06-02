@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /* {
+        const arr1 = ["sholeh", "al", "farys"];
+        document.write(arr1[0]);
+      }
+
+      {
+        //destructuring array
+        const arr1 = ["sholeh", "al", "farys", "solikin", "numpak", "sepeda"];
+        const [firstname, middlename, lastname, ...others] = arr1;
+
+        console.info(firstname);
+        console.info(others);
+      } */
+
+      let person = {
+        firstname: "sholeh",
+        lastname: "al farys",
+        address: {
+          street: "gajayana gg 2",
+          city: "malang",
+          country: "Indonesia",
+        },
+        hobbies: "ga ndue hobi :(",
+      };
+
+      let [firstname, lastname, address, ...others] = person; //error
+      console.info(firstname);
+      console.info(lastname);
+      console.info(address);
+      console.info(others);
+    </script>
+  </body>
+</html>
